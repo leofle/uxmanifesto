@@ -15,8 +15,8 @@ describe('App: Uxmanifesto', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should have as title \'uxmanifesto works!\'',
+  it('should have as title \'UXmanifesto\'',
       inject([UxmanifestoAppComponent], (app: UxmanifestoAppComponent) => {
-    expect(app.title).toEqual('uxmanifesto works!');
+    expect(app.title).toEqual('UXmanifesto');
   }));
 });
