@@ -1,4 +1,4 @@
-$primaryColor: #EF5DE1;
+$primaryColor: hotpink;
 $secondaryColor: #FFF;
 * {
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -16,10 +16,15 @@ $secondaryColor: #FFF;
 	p {
 		padding-bottom: 40px;
 	}
+	.navBtns {
+		display: flex;
+	    justify-content: center;
+	    margin: 0;
+	}
 }
 a {
 	&.btnPrime {
-		border:none;
+		border: 1px solid $primaryColor;
 	    background-color: $primaryColor;
 	    color: $secondaryColor;
 	    font-size: 20px;

@@ -27,6 +27,6 @@ export class UxmanifestoAppComponent {
   subtitle = 'What is Experience for us';
 
   clicked(event) {
-    console.log('Hi you click the button, congrats!');
+    console.log( `Hi you click the button ${ event.target.innerHTML } , congrats!` );
   }
 }
