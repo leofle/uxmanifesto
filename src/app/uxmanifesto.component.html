@@ -12,7 +12,8 @@
 We are in the Customer Age. Today people want enriched experiences that improve their lives. Customers reward companies whose products exceed their expectations.
 Brands that address this shift by building their business around a brand of listening and working with customers become and stay profitable over time.</p>
 
-<button class="btnPrime" (click)="clicked($event)">Click</button>
-
-<app-manifest-list></app-manifest-list>
+<a [routerLink]="['/route1']" class="btnPrime" (click)="clicked($event)">What</a>
+<a [routerLink]="['/route2']" class="btnPrime" (click)="clicked($event)">Why</a>
+<a [routerLink]="['/route3']" class="btnPrime" (click)="clicked($event)">How</a>
+<router-outlet></router-outlet>
 </div>

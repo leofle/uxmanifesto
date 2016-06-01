@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -6,11 +6,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'manifest-list.component.html',
   styleUrls: ['manifest-list.component.css']
 })
-export class ManifestListComponent implements OnInit {
-
-  constructor() {}
-
-  ngOnInit() {
-  }
-
-}
+export class ManifestListComponent {}

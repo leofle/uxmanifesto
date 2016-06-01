@@ -7,14 +7,17 @@ $secondaryColor: #FFF;
 .introWrapper {
 	width: 900px;
 	margin: 0 auto;
-}
-h1 {
+	h1 {
 	font-weight: 300;
+	}
+	h2 {
+	 	font-weight: 400;
+	}
+	p {
+		padding-bottom: 40px;
+	}
 }
-h2 {
- 	font-weight: 400;
-}
-button {
+a {
 	&.btnPrime {
 		border:none;
 	    background-color: $primaryColor;
@@ -23,10 +26,11 @@ button {
 	    font-weight: 100;
 	    cursor: pointer;
 	    box-sizing: border-box;
-	    width: 120px;
-	    height: 48px;
 	    transition: all .5s;
-	    &:hover {
+	    padding: 28px 20px;
+    	border-radius: 50%;
+    	text-decoration: none;
+	    &:hover, &.router-link-active {
 	    	background-color: $secondaryColor;
 	    	border: 1px solid $primaryColor;
 	    	color: $primaryColor;
