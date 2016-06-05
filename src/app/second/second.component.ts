@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: 'second.component.html',
   styleUrls: ['second.component.css']
 })
-export class SecondComponent {}
+export class SecondComponent {
+	items = ['Better User Experience', 'Higher Engagement', 'Better Performance', 'Happier Clients'];
+}
