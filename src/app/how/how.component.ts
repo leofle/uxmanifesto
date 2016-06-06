@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: 'how.component.html',
   styleUrls: ['how.component.css']
 })
-export class HowComponent {}
+export class HowComponent {
+	hows = ['User\'s oriented platform', 'Simplification', 'Graphic Lenguage', 'Technology', 'Great Team'];
+}

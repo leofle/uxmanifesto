@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES, Routes, Router } from '@angular/router';
+import { UxdataService } from './uxdata.service';
 import { ManifestListComponent } from './manifest-list/manifest-list.component';
 import { SecondComponent } from './second/second.component';
 import { HowComponent } from './how/how.component';
@@ -9,7 +10,8 @@ import { HowComponent } from './how/how.component';
   selector: 'uxmanifesto-app',
   templateUrl: 'uxmanifesto.component.html',
   styleUrls: ['uxmanifesto.component.css'],
-  directives:[ROUTER_DIRECTIVES]
+  directives:[ROUTER_DIRECTIVES],
+  providers: [UxdataService]
 })
 @Routes([
 {path:'/route1', component: ManifestListComponent },
@@ -17,7 +19,7 @@ import { HowComponent } from './how/how.component';
 {path:'/route3', component: HowComponent}
 ])
 export class UxmanifestoAppComponent {
-  constructor(private router: Router) {}
+	constructor(private router: Router, private uxdataService: UxdataService) { }
 
   ngOnInit() {
     this.router.navigate(['/route1']);
