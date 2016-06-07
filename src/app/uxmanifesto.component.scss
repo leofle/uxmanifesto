@@ -1,5 +1,20 @@
 $primaryColor: hotpink;
 $secondaryColor: #FFF;
+$shadowColor: #ccc;
+
+// generic transform
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+// translateY
+@mixin translateY($deg) {
+  @include transform(translateY(#{$deg}));
+}
+
 * {
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	margin: 30px 50px;
@@ -38,8 +53,8 @@ a {
 	    	background-color: $secondaryColor;
 	    	border: 1px solid $secondaryColor;
 	    	color: $primaryColor;
-	    	transform: translateY(-17%);
-	    	box-shadow: 0px 15px 13px #ccc;
+	    	@include translateY(-17%);
+	    	box-shadow: 0px 3px 17px $shadowColor;
 	    }
 	    &:focus {
 	    	outline: none;
