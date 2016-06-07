@@ -32,6 +32,7 @@ const barrels: string[] = [
   'app/manifest-list',
   'app/second',
   'app/how',
+  'app/http-test',
   /** @cli-barrel */
 ];
 

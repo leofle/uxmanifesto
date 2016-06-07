@@ -1,25 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { ROUTER_DIRECTIVES, Routes, Router } from '@angular/router';
-import { UxdataService } from './uxdata.service';
 import { ManifestListComponent } from './manifest-list/manifest-list.component';
 import { SecondComponent } from './second/second.component';
 import { HowComponent } from './how/how.component';
+import {HTTPTestComponent} from './http-test/http-test.component';
 
 @Component({
   moduleId: module.id,
   selector: 'uxmanifesto-app',
   templateUrl: 'uxmanifesto.component.html',
   styleUrls: ['uxmanifesto.component.css'],
-  directives:[ROUTER_DIRECTIVES],
-  providers: [UxdataService]
+  directives: [ROUTER_DIRECTIVES, HTTPTestComponent]
 })
 @Routes([
-{path:'/route1', component: ManifestListComponent },
-{path:'/route2', component: SecondComponent},
-{path:'/route3', component: HowComponent}
+{ path: '/route1', component: ManifestListComponent },
+{ path: '/route2', component: SecondComponent},
+{ path: '/route3', component: HowComponent},
+{ path: '/route4', component: HTTPTestComponent }
 ])
 export class UxmanifestoAppComponent {
-	constructor(private router: Router, private uxdataService: UxdataService) { }
+	constructor(private router: Router) { }
 
   ngOnInit() {
     this.router.navigate(['/route1']);
