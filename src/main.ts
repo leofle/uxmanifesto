@@ -5,8 +5,7 @@ import { HTTP_PROVIDERS } from '@angular/http';
 import { UxmanifestoAppComponent, environment } from './app/';
 
 if (environment.production) {
-  enableProdMode();
+	enableProdMode();
 }
 
 bootstrap(UxmanifestoAppComponent, [ROUTER_PROVIDERS, HTTP_PROVIDERS]);
-

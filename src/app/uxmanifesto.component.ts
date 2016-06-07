@@ -3,20 +3,20 @@ import { ROUTER_DIRECTIVES, Routes, Router } from '@angular/router';
 import { ManifestListComponent } from './manifest-list/manifest-list.component';
 import { SecondComponent } from './second/second.component';
 import { HowComponent } from './how/how.component';
-import {HTTPTestComponent} from './http-test/http-test.component';
+import {HttpTestComponent} from './http-test/http-test.component';
 
 @Component({
-  moduleId: module.id,
-  selector: 'uxmanifesto-app',
-  templateUrl: 'uxmanifesto.component.html',
-  styleUrls: ['uxmanifesto.component.css'],
-  directives: [ROUTER_DIRECTIVES, HTTPTestComponent]
+  	moduleId: module.id,
+	selector: 'uxmanifesto-app',
+  	templateUrl: 'uxmanifesto.component.html',
+  	styleUrls: ['uxmanifesto.component.css'],
+  	directives: [ROUTER_DIRECTIVES, HttpTestComponent]
 })
 @Routes([
 { path: '/route1', component: ManifestListComponent },
 { path: '/route2', component: SecondComponent},
 { path: '/route3', component: HowComponent},
-{ path: '/route4', component: HTTPTestComponent }
+{ path: '/route4', component: HttpTestComponent }
 ])
 export class UxmanifestoAppComponent {
 	constructor(private router: Router) { }

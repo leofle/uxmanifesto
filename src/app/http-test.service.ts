@@ -1,4 +1,3 @@
-
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -7,7 +6,7 @@ import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
 
 @Injectable()
-export class HTTPTestService {
+export class HttpTestService {
 	constructor(private _http: Http) { }
     getUser() {
 		return this._http.get("http://jsonplaceholder.typicode.com/users/1")

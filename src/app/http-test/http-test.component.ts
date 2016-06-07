@@ -1,20 +1,20 @@
 import { Component }  from '@angular/core';
-import { HTTPTestService } from '../http-test.service';
+import { HttpTestService } from '../http-test.service';
 
 @Component({
 	moduleId: module.id,
 	selector: 'app-http-test',
 	templateUrl: 'http-test.component.html',
 	styleUrls: ['http-test.component.css'],
-	providers: [HTTPTestService]
+	providers: [HttpTestService]
 })
 
-export class HTTPTestComponent {
+export class HttpTestComponent {
 	getData: string;
 	getPromiseData: string;
 	postData: string;
 
-	constructor(private _httpService: HTTPTestService) { }
+	constructor(private _httpService: HttpTestService) { }
 
 	onGet() {
 		console.log('Getting user now.');
