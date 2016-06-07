@@ -23,12 +23,16 @@ $shadowColor: #ccc;
 	width: 900px;
 	margin: 0 auto;
 	h1 {
-	font-weight: 300;
+		font-weight: 300;
 	}
+
 	h2 {
-	 	font-weight: 400;
+		font-size: 42px;
+    	font-weight: 100;
 	}
 	p {
+		font-size: 20px;
+    	font-weight: 200;
 		padding-bottom: 40px;
 	}
 	.navBtns {
