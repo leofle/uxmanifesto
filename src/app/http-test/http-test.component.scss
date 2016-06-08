@@ -1,3 +1,5 @@
+$baseColor: cyan;
+$secondaryColor: #000;
 * {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	margin: 30px 50px;
@@ -8,9 +10,9 @@
 	padding: 40px 0;
 	button {
 		padding: 14px;
-	    background: cyan;
-	    border: 1px solid cyan;
-	    color: #000;
+	    background: $baseColor;
+	    border: 1px solid $baseColor;
+	    color: $secondaryColor;
 	    font-size: 18px;
 	    font-weight: 100;
 	    cursor: pointer;
@@ -19,9 +21,9 @@
 	    	outline: none;
 	    }
 	    &:hover {
-			background: #000;
-			color: cyan;
-			border: 1px solid #000;
+			background: $secondaryColor;
+			color: $baseColor;
+			border: 1px solid $secondaryColor;
 			transform: translateX(10%);
 	    }
 	}
