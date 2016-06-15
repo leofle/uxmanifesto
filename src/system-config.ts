@@ -33,6 +33,7 @@ const barrels: string[] = [
   'app/second',
   'app/how',
   'app/http-test',
+  'app/test',
   /** @cli-barrel */
 ];
 
