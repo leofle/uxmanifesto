@@ -54,7 +54,7 @@ a {
 	    padding: 28px 20px;
     	text-decoration: none;
     	box-shadow: 0 4px 8px $shadowColor;
-	    &:hover, &.router-link-active {
+	    &:hover, &.router-link {
 	    	background-color: $secondaryColor;
 	    	border: 1px solid $secondaryColor;
 	    	color: $primaryColor;
