@@ -4,6 +4,6 @@ export class UxmanifestoPage {
   }
 
   getParagraphText() {
-    return element(by.css('uxmanifesto-app h1')).getText();
+    return element(by.css('app-root h1')).getText();
   }
 }

@@ -1,6 +1,6 @@
 <div class="introWrapper">
 <nav>
-	
+
 </nav>
 <h1>
   {{title}}
@@ -13,7 +13,7 @@ We are in the Customer Age. Today people want enriched experiences that improve 
 Brands that address this shift by building their business around a brand of listening and working with customers become and stay profitable over time.</p>
 
 <div class="navBtns">
-<a [routerLink]="['/route1']" class="btnPrime" (click)="clicked($event)">What</a>
+<a [routerLink]="['/route1']" [routerLinkActive]="active" class="btnPrime" (click)="clicked($event)">What</a>
 <a [routerLink]="['/route2']" class="btnPrime" (click)="clicked($event)">Why</a>
 <a [routerLink]="['/route3']" class="btnPrime" (click)="clicked($event)">How</a>
 <a [routerLink]="['/route4']" class="btnPrime" (click)="clicked($event)">Get</a>
