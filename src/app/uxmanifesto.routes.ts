@@ -6,10 +6,10 @@ import { HttpTestComponent } from './http-test/http-test.component';
 import { provideRouter, RouterConfig } from '@angular/router';
 
 const routes: RouterConfig = [
-{ path: 'route1', component: ManifestListComponent },
-{ path: 'route2', component: SecondComponent},
-{ path: 'route3', component: HowComponent},
-{ path: 'route4', component: HttpTestComponent }
+{ path: 'route0', component: ManifestListComponent },
+{ path: 'route1', component: SecondComponent},
+{ path: 'route2', component: HowComponent},
+{ path: 'route3', component: HttpTestComponent }
 ];
 
 export const appRouterProviders = [
