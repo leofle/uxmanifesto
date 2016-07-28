@@ -22,16 +22,16 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
       <p>{{paragraph}}</p>
 
     <div class="navBtns">
-      <a [routerLink]="['/route1']" routerLinkActive="router-link" class="btnPrime" (click)="clicked($event)">What</a>
-      <a [routerLink]="['/route2']" routerLinkActive="router-link" class="btnPrime" (click)="clicked($event)">Why</a>
-      <a [routerLink]="['/route3']" routerLinkActive="router-link" class="btnPrime" (click)="clicked($event)">How</a>
-      <a [routerLink]="['/route4']" routerLinkActive="router-link" class="btnPrime" (click)="clicked($event)">Get</a>
+        <a routerLink="/route1" class="btnPrime" (click)="clicked($event)">What</a>
+        <a routerLink="/route2" class="btnPrime" (click)="clicked($event)">Why</a>
+        <a routerLink="/route3" class="btnPrime" (click)="clicked($event)">How</a>
+        <a routerLink="/route4" class="btnPrime" (click)="clicked($event)">Get</a>
     </div>
     <router-outlet></router-outlet>
     </div>
     `,
   	styleUrls: ['uxmanifesto.component.css'],
-  	directives: [...ROUTER_DIRECTIVES, HttpTestComponent]
+  	directives: [ROUTER_DIRECTIVES, HttpTestComponent]
 })
 
 export class UxmanifestoAppComponent {
