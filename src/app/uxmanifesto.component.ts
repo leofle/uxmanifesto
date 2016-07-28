@@ -22,7 +22,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
       <p>{{paragraph}}</p>
 
     <div class="navBtns">
-        <a routerLink="{{'/route'+i}}" class="btnPrime" (click)="clicked($event)" *ngFor="let item of items; let i = index">{{item}}</a>
+        <a routerLink="{{'/route'+i}}" class="btnPrime" routerLinkActive="active" (click)="clicked($event)" *ngFor="let item of items; let i = index">{{item}}</a>
     </div>
     <router-outlet></router-outlet>
     </div>
