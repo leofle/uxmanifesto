@@ -6,6 +6,7 @@ import { HttpTestComponent } from './http-test/http-test.component';
 import { provideRouter, RouterConfig } from '@angular/router';
 
 const routes: RouterConfig = [
+{ path: '', component: ManifestListComponent },
 { path: 'route0', component: ManifestListComponent },
 { path: 'route1', component: SecondComponent},
 { path: 'route2', component: HowComponent},
